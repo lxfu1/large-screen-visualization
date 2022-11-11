@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useSnapshot } from "valtio";
+import { Graph } from "./million";
+import { state } from "./models";
+import "./App.css";
 
 function App() {
+  const snap = useSnapshot(state);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <span>{snap.count}</span>
+      <input type="text" />
+      <Graph />
     </div>
   );
 }
