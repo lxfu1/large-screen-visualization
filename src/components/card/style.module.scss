@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px ;
+  background-size: 100% 100% !important;
+
+  >h5 {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 24px;
+  }
+  .children {
+    padding: 6px 12px;
+    flex: 1;
+    overflow: hidden;
+
+    > div {
+      height: 100% !important;
+    }
+  }
+}

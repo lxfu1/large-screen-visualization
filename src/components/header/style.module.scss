@@ -1,0 +1,16 @@
+$header-height: 112px;
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  left: 0;
+  top: 0;
+  background: url(../../assets/nav.png) no-repeat,
+    url(../../assets/light.png) left bottom no-repeat, 
+    url(../../assets/light.png) right bottom no-repeat;
+  background-size: 100% auto, auto, auto;
+  text-align: center;
+  font-size: 42px;
+  padding-top: 24px;
+}

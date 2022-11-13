@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #062B57;
+
+  .point {
+    position: absolute;
+    z-index: 1;
+  }
+  .animate {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

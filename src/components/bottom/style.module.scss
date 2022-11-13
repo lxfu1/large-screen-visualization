@@ -1,0 +1,12 @@
+$bottom-height: 50px;
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $bottom-height;
+  text-align: center;
+  line-height: $bottom-height;
+  font-size: 24px;
+}
